@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blogger</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="navbar navbar-light bg-light" style="box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;">
+<div class="container-fluid">
+    <a class="navbar-brand d-flex align-items-center" href="index.html" style="text-decoration: none; color: black;">
+        <img src="https://www.reshot.com/preview-assets/icons/BVQRCAPDM8/blogger-BVQRCAPDM8.svg" alt="" width="30" height="24" class="d-inline-block align-text-top me-2">
+        Blogger
+    </a>
+    <ul class="nav">
+        <li class="nav-item">
+            <a class="nav-link text-dark" href="#">About</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-dark" href="#">Contact Us</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-dark" href="profile.html">Profile</a>
+        </li>
+    </ul>
+    <a href="index.html"><button class="btn btn-primary" type="button">Log out</button></a>
+</div> 
+</nav>
+<br><br>
+<div class="container mt-5">
+<div class="col-md-8 mx-auto">
+    <div class="card mb-4">
+        <div class="card-header">
+            <h5>Profile</h5>
+        </div>
+        <div class="card-body text-center">
+            <div class="user-image mb-3">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="#e68142" width="100" height="100" viewBox="0 0 512 512">
+                    <path d="M256,48C141.31,48,48,141.31,48,256s93.31,208,208,208,208-93.31,208-208S370.69,48,256,48ZM205.78,164.82C218.45,151.39,236.28,144,256,144s37.39,7.44,50.11,20.94C319,178.62,325.27,197,323.79,216.76,320.83,256,290.43,288,256,288s-64.89-32-67.79-71.25C186.74,196.83,193,178.39,205.78,164.82ZM256,432a175.49,175.49,0,0,1-126-53.22,122.91,122.91,0,0,1,35.14-33.44C190.63,329,222.89,320,256,320s65.37,9,90.83,25.34A122.87,122.87,0,0,1,382,378.78,175.45,175.45,0,0,1,256,432Z"/>
+                </svg>
+            </div>
+            <h6 class="f-w-600 m-t-25 m-b-10" id="proname">name</h6>
+            <p class="text-muted" id="proemail">email</p>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <h5>Your Blogs</h5>
+        </div>
+        <div class="card-body" id="userBlogsContainer">
+            <p>No blogs to display.</p>
+        </div>
+    </div>
+</div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="./profile.js"></script>
+</body>
+</html>
